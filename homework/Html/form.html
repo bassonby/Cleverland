@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <fieldset>
+            <Legend>
+                Ваши данные
+            </Legend>
+            <p>
+                <Label>
+                    Ваше имя:
+                    <input tabindex="1" type="text" name="username" placeholder="имя">
+                </Label>
+            </p>
+            <p>
+                <label>
+                    Ваша фамилия:
+                    <input tabindex="2" type="text" name="usersurname" placeholder="фамилия">
+                </label>
+            </p>
+            <p>
+                <label >
+                    Ваш контактный телефон:
+                <input tabindex="3" type="tel" name="phone" placeholder="+375(**)***-**-**">
+                </label>
+            </p>
+            <p>
+                <label >
+                    Ваш пароль:
+                    <input tabindex="4" type="password" name="userpassword" placeholder="введите пароль">
+                </label>
+            </p>
+            <div>
+                <p>
+                    Пол
+                </p>
+                <input checked tabindex="5" type="radio" name="gender" value="male">Мужской
+                <br>
+                <input tabindex="5" type="radio" name="gender" value="female">Женский
+            </div>
+            <div>
+                <p>
+                    Имущество
+                </p>
+                    <div>
+                        <input checked tabindex="6" type="checkbox" name="bike" value="yes" >Велик
+                    </div>
+                    <div>
+                        <input tabindex="7" type="checkbox" name="car" value="yes" >Машина
+                    </div>
+                    <div>
+                        <input disabled tabindex="8" type="checkbox" name="house" value="yes" >Квартира
+                    </div>
+                
+            </div>
+            <div>
+                <p>
+                    Допоплнительная информация
+                </p>
+                <textarea tabindex="9" name="text" cols="30" rows="10">
+
+                </textarea>
+            </div>
+            <div>
+                <p>
+                    Ваше фото
+                </p>
+                
+                    <input tabindex="10" type="file" name="userfoto">
+                
+            </div>
+            <div>
+                <p>
+                    Любимый цвет
+                </p>
+                <select name="color" >
+                    <option value="red"> красный</option>
+                    <option value="green">зеленый</option>
+                    <option value="yellow">желтый</option>
+                </select>
+            </div>
+
+
+            <div>
+                <p>
+                    Действия
+                </p>
+                <button type="submit">
+                    Отправить
+                </button>
+                <button type="reset">
+                Очистить
+                </button>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
