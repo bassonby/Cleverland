@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика 9</title>
+</head>
+<body>
+    <div>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>
+                    Регистрационная форма пользователя
+                </legend>
+                <p>
+                    <label>
+                        Имя:
+                        <input type="text" name="username" required >
+                    </label>
+                </p>
+                <p>
+                    <span>
+                        Укажите возраст
+                    </span>
+                    <select name="old" required>
+                        <option disabled selected>Выберите возраст</option>
+                        <option value="10-15"> 10-15 лет </option>
+                        <option value="15-20">15-20 лет </option>
+                        <option value="20-30"> 20-30 лет</option>
+                        <option value="30-40">30-40 лет</option>
+                        <option value=">40"> больше 40</option>
+                    </select>
+                </p>
+                <p>
+                    
+                    Выберите пол
+                    <label>
+                    
+                        <input type="radio" name="gender" value="mele">Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="femele">Женский
+                    </label>
+                </p>
+                <p>
+                    Страна проживания:
+                    <select name="country">
+                        <option value="Belarus">Беларусь</option>
+                        <option value="russian">Российская Федирация</option>
+                        <option value="dr country"> Другое государство</option>
+                    </select>
+                </p>
+                <p>
+                    Владение языками:
+                    <input type="checkbox" name="lang" value="yes">русский
+                    <input type="checkbox" name="lang" value="yes">белорусский
+                    <input type="checkbox" name="lang" value="yes">английский
+                </p>
+                <p>
+                    <label>
+                        Фото профиля:
+                        <input type="file" name="userfoto" accept=".jpg">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Введите логин:
+                        <input type="text" name="login" required >
+                    </label>
+                </p>
+                <p>
+                    <label >
+                    Введите пароль:
+                    <input type="password" name="pass" required>
+                    </label>
+                </p>
+                <p>
+                    <label >
+                        Повторите пароль:
+                        <input type="password" name="pass" required>
+                    </label>
+                </p>
+            </fieldset>
+            <div>
+                <button type="reset">
+                    Сбросить
+                </button>
+                <button type="submit">
+                    Отправить
+                </button>
+            </div>
+        </form>
+        
+        
+    </div>
+    
+</body>
+</html>
