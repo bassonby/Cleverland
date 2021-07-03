@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>
+                Параметры автомобиля
+            </legend>
+            <div>
+                <label>
+                    <span>
+                        Марка автомобиля:
+                    </span>
+                    <input type="text" name="avto" required>
+                </label>
+            </div>
+            <br>
+            <div>
+               <label>
+                    Обьем двигателя, см<sup>3</sup>:
+                    <input type="number" name="enginevolume" required placeholder="1900" re>
+               </label>
+            </div>
+            <br>
+            <div>
+                <label>
+                    Область:
+                        <select name="region" required>
+                            <option value="brestskay"> Брестская</option>
+                            <option value="Vitebskay">Витебская</option>
+                            <option value="gomelskay">Гомельская</option>
+                            <option value="grodnenskay">Гродненская</option>
+                            <option value="minskay">Минская</option>
+                            <option value="mogilevskay">Могилевская</option>
+                        </select>
+                </label>
+            </div>
+            <br>
+            <div>
+                <p>
+                    Тип КПП
+                </p>
+               
+                <label>
+                    <input type="radio" name="KPP" value="auto">Автомат
+                </label>
+                    <br>
+                <label>
+                    <input type="radio" name="KPP" value="meh">Механика
+                </label>
+            </div>
+            <div>
+                <p>
+                    Двигатель
+                </p>
+                <label>
+                    <input type="checkbox" name="engine" value="electro">Электро
+                </label>
+                <br>
+                <Label>
+                    <input type="checkbox"  name="engine" value="diesel">Дизель
+                </Label>
+                <br>
+                <Label>
+                    <input type="checkbox" name="engine" value="benzin">Бензин
+                </Label>
+                <br>
+                <Label>
+                    <input type="checkbox" name="engine" value="propane-butane">Проран-бутан
+                </Label>
+                <br>   
+                <Label>
+                    <input type="checkbox" name="engine" value="metan">Метан
+                </Label>
+             </div>
+             <div>
+                 <p>
+                     Описание:
+                 </p>
+                 <textarea name="text"  cols="30" rows="10">
+
+                 </textarea>
+             </div>
+             <div>
+                 <button type="submit">
+                     Отправить
+                 </button>
+                 <button type="reset">
+                     Очистить
+                 </button>
+             </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
