@@ -9,39 +9,47 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">
-                    Главная
-                </a>
-            </li>
-            <li>
-                <a href="Katalog.html">
-                    Каталог
-                </a>
-            </li>
-            <li>
-                <a href="Kontaks.html">
-                    Контакты
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    О нас
-                </a>
-            </li>
-            <li>
-                <a href=""></a>
-                Производители
-            </li>
-            <li>
-                <a href="regist.html">
-                    Регистрация
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="Katalog.html">
+                        Каталог
+                    </a>
+                </li>
+                <li>
+                    <a href="Kontaks.html">
+                        Контакты
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        О нас
+                    </a>
+                </li>
+                <li>
+                    <a href="manufacturers.html ">
+                        Производители
+                    </a>
+                </li>
+                <li>
+                    <a href="regist.html">
+                        Регистрация
+                    </a>
+                </li>
+                <li>
+                    <a href="zakaz.html">
+                        Закать товар
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <hr />
     <p align="center">
         Магазин-бар "Три медведя"
@@ -56,129 +64,162 @@
         <a href="regist.html">
             регистрацию.
         </a>
-        
+
     </h1>
     <form>
         <fieldset>
             <legend>
                 Заказ товара
             </legend>
-            <div>
-                Введите логин:
-                <input type="text" name="login">
-            </div>
-            <div>
-                Название товара:
-                <select name="tovar">
-                    <option value="Störtebeker Baltik-Lager">
-                        Störtebeker Baltik-Lager
-                    </option>
-                    <option value="Schloss Eggenberg Nessie">
-                        Schloss Eggenberg Nessie
-                    </option>
-                    <option value="Guinness Hop House 13 Lager">
-                        Guinness Hop House 13 Lager
-                    </option>
-                    <option value="Bernard Jantarový Ležák">
-                        Bernard Jantarový Ležák
-                    </option>
-                    <option value="Anderson Valley Boont Barl">
-                        Anderson Valley Boont Barl
-                    </option>
-                    <option value="Leffe Brown">
-                        Leffe Brown
-                    </option>
-                    <option value="BrewDog Five AM Red">
-                        BrewDog Five AM Red
-                    </option>
-                    <option value="RED ALE">
-                        RED ALE
-                    </option>
-                    <option value="Ringwood Circadian Everyday IPA">
-                        Ringwood Circadian Everyday IPA
-                    </option>
-                    <option value="BrewDog Dead Pony Pale Ale">
-                        BrewDog Dead Pony Pale Ale
-                    </option>
-                    <option value="Celt Experience Silures">
-                        Celt Experience Silures
-                    </option>
-                    <option value="Wychwood Scarecrow">
-                        Wychwood Scarecrow
-                    </option>
-                    <option value="Loch Ness Wilder Ness">
-                        Loch Ness Wilder Ness
-                    </option>
-                    <option value="Black Isle Organic Red Kite">
-                        Black Isle Organic Red Kite
-                    </option>
-                    <option value="Anderson Valley Belk's ESB">
-                        Anderson Valley Belk's ESB
-                    </option>
-                    <option value="Mikkeller Brian BA Bourbon">
-                        Mikkeller Brian BA Bourbon
-                    </option>
-                    <option value="Крынiца Porter">
-                        Крынiца Porter
-                    </option>
-                    <option value="Black Isle Organic Porter">
-                        Black Isle Organic Porter
-                    </option>
-                    <option value="Guinness West Indies Porter">
-                        Guinness West Indies Porter
-                    </option>
-                    <option value="Anderson Valley Bourbon Barrel Stout">
-                        Anderson Valley Bourbon Barrel Stout
-                    </option>
-                    <option value="Guinness Draught">
-                        Guinness Draught
-                    </option>
-                    <option value="Belhaven Scottish Stout">
-                        Belhaven Scottish Stout
-                    </option>
-                    <option value="Störtebeker Pilsener-Bier">
-                        Störtebeker Pilsener-Bier
-                    </option>
-                    <option value="Neuzeller Marathon">
-                        Neuzeller Marathon
-                    </option>
-                    <option value="Edel-Pils Premium">
-                        Edel-Pils Premium
-                    </option>
-                    <option value="Bernard Sváteční Ležák">
-                        Bernard Sváteční Ležák
-                    </option>
-                </select>
-            </div>
-            <br>
-            <div>
-                Количество:
-                <input type="number" name="quantity" value="1">
-            </div>
-            <div>
-                <div>
-                    Способ оплаты:
+            <table align="center">
+                <tr>
+                    <td>
+                        <div>
+                            Введите логин:
 
-                    <input type="radio" name="payment" value="cash"> расчёт наличными при получении товара
-                </div>
-                <div>
-                    <input type="radio" name="payment" value="cashless">расчёт банковской картой
-                </div>
-                <div>
-                    <input type="radio" name="payment" value="onlinewallet">оплата с помощью электронного кошелька
-                </div>
-                <div>
-                    <input type="radio" name="payment" value="trafficjams">оплата крышечками
-                </div>
-            </div>
-            <div>
-                <button type="reset">
-                    я одумался
-                </button>
-                <button type="submit">
-                    Заказать
-                </button>
-            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input type="text" name="login">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Название товара:
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <select name="tovar">
+                                <option value="Störtebeker Baltik-Lager">
+                                    Störtebeker Baltik-Lager
+                                </option>
+                                <option value="Schloss Eggenberg Nessie">
+                                    Schloss Eggenberg Nessie
+                                </option>
+                                <option value="Guinness Hop House 13 Lager">
+                                    Guinness Hop House 13 Lager
+                                </option>
+                                <option value="Bernard Jantarový Ležák">
+                                    Bernard Jantarový Ležák
+                                </option>
+                                <option value="Anderson Valley Boont Barl">
+                                    Anderson Valley Boont Barl
+                                </option>
+                                <option value="Leffe Brown">
+                                    Leffe Brown
+                                </option>
+                                <option value="BrewDog Five AM Red">
+                                    BrewDog Five AM Red
+                                </option>
+                                <option value="RED ALE">
+                                    RED ALE
+                                </option>
+                                <option value="Ringwood Circadian Everyday IPA">
+                                    Ringwood Circadian Everyday IPA
+                                </option>
+                                <option value="BrewDog Dead Pony Pale Ale">
+                                    BrewDog Dead Pony Pale Ale
+                                </option>
+                                <option value="Celt Experience Silures">
+                                    Celt Experience Silures
+                                </option>
+                                <option value="Wychwood Scarecrow">
+                                    Wychwood Scarecrow
+                                </option>
+                                <option value="Loch Ness Wilder Ness">
+                                    Loch Ness Wilder Ness
+                                </option>
+                                <option value="Black Isle Organic Red Kite">
+                                    Black Isle Organic Red Kite
+                                </option>
+                                <option value="Anderson Valley Belk's ESB">
+                                    Anderson Valley Belk's ESB
+                                </option>
+                                <option value="Mikkeller Brian BA Bourbon">
+                                    Mikkeller Brian BA Bourbon
+                                </option>
+                                <option value="Крынiца Porter">
+                                    Крынiца Porter
+                                </option>
+                                <option value="Black Isle Organic Porter">
+                                    Black Isle Organic Porter
+                                </option>
+                                <option value="Guinness West Indies Porter">
+                                    Guinness West Indies Porter
+                                </option>
+                                <option value="Anderson Valley Bourbon Barrel Stout">
+                                    Anderson Valley Bourbon Barrel Stout
+                                </option>
+                                <option value="Guinness Draught">
+                                    Guinness Draught
+                                </option>
+                                <option value="Belhaven Scottish Stout">
+                                    Belhaven Scottish Stout
+                                </option>
+                                <option value="Störtebeker Pilsener-Bier">
+                                    Störtebeker Pilsener-Bier
+                                </option>
+                                <option value="Neuzeller Marathon">
+                                    Neuzeller Marathon
+                                </option>
+                                <option value="Edel-Pils Premium">
+                                    Edel-Pils Premium
+                                </option>
+                                <option value="Bernard Sváteční Ležák">
+                                    Bernard Sváteční Ležák
+                                </option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Количество:
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input type="number" name="quantity" value="1">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Способ оплаты:
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input type="radio" name="payment" value="cash"> расчёт наличными при получении товара
+                            <br>
+                            <input type="radio" name="payment" value="cashless">расчёт банковской картой
+                            <br>
+                            <input type="radio" name="payment" value="onlinewallet">оплата с помощью электронного
+                            кошелька
+                            <br>
+                            <input type="radio" name="payment" value="trafficjams">оплата крышечками(только для VIP-клиентов)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="reset">
+                            я одумался
+                        </button>
+                    </td>
+                    <td>
+                        <button type="submit">
+                            Заказать
+                        </button>
+                    </td>
+                </tr>
+            </table>
         </fieldset>
     </form>
 </body>
