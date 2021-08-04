@@ -1,0 +1,17 @@
+li:first-of-type span{
+    vertical-align: super;
+
+}
+li:last-of-type span{
+    vertical-align: sub;
+}
+div{
+    font-size: 2em;
+}
+
+span{
+      font-size: 50%;
+}
+p{
+    font-weight: bold;
+}

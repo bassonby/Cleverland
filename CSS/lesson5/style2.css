@@ -1,30 +1,22 @@
-p#p_1{
+p#p_1,p#p_2{
     width: 500px;
     padding: 1em;
+}
+p#p_1{
+    
     background-color: orange;
     text-align: left;
 }
 p#p_2{
-    width: 500px;
-    padding: 1em;
     background-color: violet;
     text-align: right;
 }
-.first{
+.first, p#p_2>span:first-child{
     text-decoration: underline dotted;
 }
-.second{
+.second, p#p_2 span:nth-of-type(2){
     text-decoration: underline dashed;
 }
-.third{
-    text-decoration: underline wavy;
-}
-p#p_2>span:first-child{
-    text-decoration: underline dotted;
-}
-p#p_2 span:nth-of-type(2){
-    text-decoration: underline dashed;
-}
-p#p_2>span:last-child{
+.third, p#p_2>span:last-child{
     text-decoration: underline wavy;
 }
