@@ -1,0 +1,35 @@
+div{
+    width: 400px;
+    padding: 7px;
+}
+p:first-child{
+    font-size: 2.5em;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+}
+p:nth-child(2){
+    font-size: 2em;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+}
+p:last-child{
+    font-family: 'Times New Roman', Times, serif, Georgia;
+    line-height: 1.5;
+    letter-spacing: 2px;
+   
+}
+.i{
+    font-style: italic;
+    text-decoration: underline solid grey;
+}
+.b{
+    font-weight: bold;
+    text-decoration: underline dotted red;
+}
+.u{
+    /* я так и не понял что здесь менять*/
+}
