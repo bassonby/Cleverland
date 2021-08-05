@@ -1,0 +1,12 @@
+table{
+    
+    border-spacing: 0px;
+    
+}
+td{
+    border: 1px solid black;
+}
+
+.table{
+    caption-side: bottom;
+}
