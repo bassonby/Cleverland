@@ -1,0 +1,22 @@
+td{
+    
+    border-radius: 5px;
+    width: 120px;
+    padding: 15px;
+    background-color: #c5ec91;
+}
+th{
+    background: linear-gradient(to top, #8af004,#6ab623);
+    empty-cells: hide;
+    color: cornsilk;
+    height: 40px;
+    width: 80px;
+    font-size: 1.1em;
+}
+tbody tr th{
+    background: linear-gradient( 45deg,  #bcee7a,#a9e76e );
+}
+table{
+    text-align: center;
+    font-weight: bold;   
+}
