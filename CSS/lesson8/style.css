@@ -1,3 +1,6 @@
+*{
+    box-sizing:border-box;
+}
 .div_1{
    position: fixed;
    margin-top: 30px;
@@ -5,11 +8,26 @@
    width: 300px;
    height: 400px;
    padding: 15px; 
-   border: 5px dashed green;
+   border: 5px dashed rgb(78, 219, 78);
 }
 .div_2{
     width: 70px;
     height: 50px;
     border: 2px solid orange;
     background: radial-gradient( 35px 35px at 10px 10px, #00ffff, #ffffff);
+    padding: 5px;
+    display: inline-block;
+    float: left;
+}
+.div_3{
+    width: 70px;
+    height: 50px;
+    border: 2px dotted red;
+    background: linear-gradient(45deg, #0000ff, #ffffff);
+    padding: 5px;
+    float: right;
+}
+.div_3:hover{
+    background: linear-gradient(45deg, #0000ff, #ffffff);
+    opacity: .3;
 }

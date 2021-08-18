@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+div div{
+    display: inline-block;
+    height: 100%;
+    margin-left: 20px;   
+    font-size: 18px;
+    padding-top: 20px;
+    position: relative;
+    
+
+}
+.d_1{
+    height: 50px;
+    width: 1000px;
+    border: 1px solid black;
+    margin: 0 auto;
+   /* background: linear-gradient(to bottom, black 20%, white 20%);*/
+}
+div div:hover{
+    color: rgb(80, 200, 221);
+}
+
+div div:nth-child(2)::after{
+    content: " \25BC ";
+}
+div.d_1 div::before{
+    content: "__________";   
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
