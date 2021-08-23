@@ -1,0 +1,42 @@
+h1{
+    color: blueviolet;
+    text-shadow: 2px 2px 3px black;
+}
+thead{
+    background-color: blueviolet;
+}
+td,table,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+th{
+    background-color: rgb(175, 135, 212);
+}     
+
+table{
+    width: 600px; 
+    
+}
+
+td:hover::after{
+    background-color: rgba(140, 140, 255, 0.4);
+    content: "";
+    position: absolute;
+    height: 2000vh;
+    left: 0;
+    top: -1000vh;
+    width: 100%;
+    z-index: -1;
+   
+}
+td{
+    position: relative;
+
+}
+table{
+    overflow: hidden;
+}
+tr:hover{
+    background-color: rgba(140, 140, 255, 0.4);
+}

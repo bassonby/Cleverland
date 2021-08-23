@@ -1,12 +1,13 @@
 table{
-    
-    border-spacing: 0px;
-    
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 td{
-    border: 1px solid black;
+    border: 1px solid  black;
 }
-
-.table{
+div.t2 table{
     caption-side: bottom;
-}
+    margin-top: 30px;
+    border-collapse: separate;
+    empty-cells: hide ;
+} 

@@ -1,0 +1,43 @@
+.div_1{
+    display: inline-block;
+    border: 3px solid rgb(185, 245, 203);
+    width: 850px;
+    height: 60px;
+    background-color: rgb(208, 214, 213);
+    position: relative;
+   
+}
+*{
+    box-sizing: border-box;
+}
+.div_2{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+
+.div_3{
+    display: inline-block;
+    padding-left: 40px;
+
+}
+.div_4{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    
+    align-items: center;
+}
+div p:first-of-type{
+    font-weight:900;
+    font-size: 16px;
+    margin: 5px;
+    color: blue;
+}
+div p:last-of-type{
+    margin: 5px;
+    font-size: 16px;
+    color: rgb(150, 187, 112);
+}

@@ -3,10 +3,18 @@ a{
     margin: 20px;
     padding: 10px;
     background: linear-gradient(to top, #4fbd24, #41ec03);
-    width: 120px;
-    height: 40px;
+    font-size: 2em;
+    width: 250px;
     text-align: center;
-    text-align: inherit;
-
-
+    border-radius: 10px;
+    color: honeydew;
+    text-decoration: none;
+    outline: 1px solid white;
+    outline-offset: -10px;
+}
+a#but:hover{
+    background: linear-gradient(to top, #f9a80c, #fbc157);
+}
+a#but:active {
+    background: linear-gradient(to top, #f3dfaf, #f7de6f);
 }
