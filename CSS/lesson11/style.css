@@ -1,0 +1,17 @@
+div.container{
+    max-width: 980px;
+    padding: 60px;
+    margin: 0 auto;
+}
+.photo-grid clearfix{
+    position: relative;
+    margin-top: 160px;
+    padding: 10px;
+    text-align: center;
+
+}
+.photo-grid img{
+    position: relative;
+    height: 172px;
+    background-color: aliceblue;
+}
