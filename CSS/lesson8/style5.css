@@ -6,30 +6,50 @@ div div{
     height: 100%;
     margin-left: 20px;   
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 15px;
     position: relative;
+    border-top:3px solid black;
+    border-left: 1px solid transparent;
+    border-bottom: 1 px solid transparent;
+    border-right: 1px solid transparent;
+    z-index: 3;
     
-
 }
 .d_1{
     height: 50px;
     width: 1000px;
     border: 1px solid black;
-    margin: 0 auto;
-   /* background: linear-gradient(to bottom, black 20%, white 20%);*/
+    
+    
+    background: linear-gradient(0deg, rgb(97, 91, 91), white );
+   
 }
 div div:hover{
     color: rgb(80, 200, 221);
+    border-top:3px solid rgb(80, 200, 221);
 }
 
 div div:nth-child(2)::after{
     content: " \25BC ";
 }
 div.d_1 div::before{
-    content: "__________";   
+    content: "";   
     transition: all 0.5s;
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 0;
     width: 100%;
+    
+}
+div div:first-of-type{
+    margin-left: 50px;
+}
+div.class{
+    width: 1000px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    margin: 0 auto;
+    z-index: 2;
 }

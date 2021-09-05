@@ -2,6 +2,7 @@ div.container{
     max-width: 980px;
     padding: 60px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 .photo-grid clearfix{
     position: relative;
@@ -14,4 +15,44 @@ div.container{
     position: relative;
     height: 172px;
     background-color: aliceblue;
+    box-shadow: 0 0 5px black;
+    float: left;
+    margin-top: -100px;
+    padding: 10px;
+    z-index: 2;
 }
+.photo-grid img:nth-child(even){
+   transform: translateX(10px);
+   transform: rotate(8deg);
+}
+.photo-grid img:nth-child(odd){
+    transform: translate(40px,30px );
+    transform: rotate(-5deg);
+ }
+ .photo-grid img:nth-child(3n){
+    transform: translate(7px,40px);
+    transform: rotate(-15deg);
+ }
+ .photo-grid img:nth-child(5n){
+   left: 5px;
+   top: 20px;
+ }
+ .photo-grid img:nth-child(6n){
+    transform: translate(-10px,30px);
+    transform: rotate(15deg);
+ }
+ .photo-grid img:nth-child(9n){
+    transform: translate(-10px,30px);
+    transform: rotate(22deg);
+ }
+ .photo-grid img:hover{
+     box-shadow:15px 15px 20px rgba(0, 0, 0, 0.6);
+      transform: rotate(-500deg);
+     transform:scale(1.5);
+     z-index: 10;
+     transform: rotate(deg);
+ }
+ .photo-grid img{
+     transition: all 0.4s ease-in 0s;
+ }
+ 

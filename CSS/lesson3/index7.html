@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus[type="text"]{
+            box-shadow: 0px 0px 10px orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Анкета
+    </h1>
+    <form>
+        <table border="3" cellpadding="5" cellspacing="0" width="65%">
+            <tr>
+                <td>
+                    Фамилия
+                </td>
+                <td>
+                    <input type="text" name="usesurrname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Имя
+                </td>
+                <td>
+                   <input type="text" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Отчество
+                </td>
+                <td>
+                    <input type="text" name="patronymic">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Пол
+                </td>
+                <td>
+                    <input type="radio" name="sex" value="men" checked>Мужской
+                    <br>
+                    <input type="radio" name="sex" value="women">Женский
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Дата рождения
+                </td>
+                <td>
+                    <input type="date" name="data">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Владею языками
+                </td>
+                <td>
+                    <input type="checkbox" name="bel" checked>Белорусский
+                    <br>
+                    <input type="checkbox" name="rus" checked>Русский
+                    <br>
+                    <input type="checkbox" name="ang" checked>Английский
+                    <br>
+                    <input type="checkbox" name="chn">Китайский
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Адрес места жительства(пребывания)
+                </td>
+                <td>
+                    <input type="text" name="adress">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">
+                        Отправить данные
+                    </button>
+                </td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
