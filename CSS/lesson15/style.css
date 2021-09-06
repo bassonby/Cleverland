@@ -1,0 +1,40 @@
+.leading{
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+   
+}
+.header{
+    display: grid;
+    grid-template-rows: 200px 20%;
+}
+.logo{
+   
+    background-image: url(img/1420.jpg) ;
+}
+.top-menu{
+    background-color: darkblue;
+    color: white;
+    font-size: 1.5em;
+}
+
+    
+.s_1{
+    display: grid;
+    grid-template-columns: 250px 3fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+.left-panel{
+    background-color: blueviolet;
+}
+.main{
+    background-color: burlywood;
+}
+.s_2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: cyan;
+    
+}
