@@ -1,0 +1,26 @@
+div{
+    width: 120px;
+    
+}
+.block1 {
+    display: inline-block;
+    background-color: rgb(143, 143, 233);
+    color: cornsilk;
+    text-align: center;
+    font-size: 24px;
+}
+div.b1{
+    display:inline-block;
+}
+.img{
+    display: block;
+}
+.temp{
+    font-size: 24px;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+}
+div.b1:hover{
+    box-shadow: 0 0 1em grey;
+}
