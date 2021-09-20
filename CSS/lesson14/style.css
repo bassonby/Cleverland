@@ -3,6 +3,7 @@
 }
 div.wrapper{
     max-width: 1600px;
+    width: 100%;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -15,11 +16,12 @@ div.wrapper{
 }
 
 .logo{
-    height: 200px;
+    flex: 0 0 200px;
     background: url(img/1420.jpg) no-repeat center;
     background-color: #095c5c;
 }
 .top-menu{
+    flex: 0 0 50px;
     background-color: darkblue;
     padding: 30px;
 }
@@ -33,13 +35,14 @@ div.wrapper{
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 5px 15px;
+    
    
 }
 .top-menu a:hover{
     background-color: transparent;
     box-shadow: 5px 5px 10px rgb(255,255, 255);
     color: #fff;
-    transform: scale(1.1, 1.1);
+    transform:scale(1.1, 1.1)
 }
 .s_1{
     display: flex;
@@ -81,7 +84,7 @@ div.wrapper{
     display: flex;
     justify-content: space-around;
     background-color:darkslategrey;
-    height: 20vh;
+    min-height: 20vh;
     text-align: center;
     padding: 10px;
     color: #fff;
@@ -136,6 +139,7 @@ div.wrapper{
     }
     .footer{
         flex-direction: column;
+        min-height: 20vh;
     }
     .footer a{
         margin: 10px;
