@@ -3,6 +3,7 @@
 }
 div.wrapper{
     max-width: 1600px;
+    width: 100%;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -15,11 +16,12 @@ div.wrapper{
 }
 
 .logo{
-    height: 200px;
+    flex: 0 0 200px;
     background: url(img/1420.jpg) no-repeat center;
     background-color: #095c5c;
 }
 .top-menu{
+    flex: 0 0 50px;
     background-color: darkblue;
     padding: 30px;
 }
@@ -40,7 +42,7 @@ div.wrapper{
     background-color: transparent;
     box-shadow: 5px 5px 10px rgb(255,255, 255);
     color: #fff;
-   
+    transform:scale(1.1, 1.1)
 }
 .s_1{
     display: flex;

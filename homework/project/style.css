@@ -1,4 +1,45 @@
-.dropbtn{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.leading{
+    max-width: 1600px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: blueviolet
+}
+.header-block{
+   
+}
+.header{
+    border: 3px solid black;
+    max-height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .dropbtn{
     background-color: transparent;
     color: blanchedalmond;
     padding: 20px;
@@ -44,4 +85,4 @@
     width: 1920px;
     height: 100px;
     margin: 0px;
-}
+} */
