@@ -33,13 +33,14 @@ div.wrapper{
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 5px 15px;
+    
    
 }
 .top-menu a:hover{
     background-color: transparent;
     box-shadow: 5px 5px 10px rgb(255,255, 255);
     color: #fff;
-    transform: scale(1.1, 1.1);
+   
 }
 .s_1{
     display: flex;
@@ -81,7 +82,7 @@ div.wrapper{
     display: flex;
     justify-content: space-around;
     background-color:darkslategrey;
-    height: 20vh;
+    min-height: 20vh;
     text-align: center;
     padding: 10px;
     color: #fff;
@@ -136,6 +137,7 @@ div.wrapper{
     }
     .footer{
         flex-direction: column;
+        min-height: 20vh;
     }
     .footer a{
         margin: 10px;
