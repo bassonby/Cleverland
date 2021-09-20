@@ -2,7 +2,7 @@ h2{
     color: #3857a0;
     font-family: 'PT Serif',tahoma, verdana, sans-serif;
     font-weight: bold;
-    font-size:26px;
+    font-size: 26px;
     text-align: center;
 }
 table{
@@ -26,5 +26,5 @@ li{
 }
 td li{
     font-weight: normal;
-    color:#000;
+    color:#000000;
 }
