@@ -19,4 +19,5 @@ switch (period) {
         alert( "«отлично»");
         break;
 default:
+    alert("ERROR");
 }

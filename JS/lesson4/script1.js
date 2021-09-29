@@ -1,7 +1,7 @@
 "use srtict"
 
-let result = prompt("Каково «официальное» название JavaScript?",  );
-let owner = "ECMAScript";
+const result = prompt("Каково «официальное» название JavaScript?",  );
+const owner = "ECMAScript";
 if (result == owner) {
     alert("«Верно!»");
 }
