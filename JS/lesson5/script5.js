@@ -1,9 +1,12 @@
 "use strict"
 
 const number = +prompt("Введите число", );
-let i = 1;
+let i = 10;
 for( i ; i < 100 ; i++){
-    if ( i % number == 0){
+    let m = Math.floor(i / 10);
+    let k = ( i - m * 10);
+    let s = m + k ;
+    if ( s % number == 0){
         alert(i);
     } 
 }
