@@ -1,41 +1,39 @@
-"use strict";
+"use strict"
 
-let input = prompt("Введите чего");
-const arr = [];
+let number1 = Number(prompt("Введите число с которого будет начат отсчет", 10));
+let number2 = Number(prompt("Введите число которым будет закончен отсчет", 5));
+let sec = 1000;
+let times = (number1 - number2) * sec;
 
-while (input !== null) {
-    arr.push(input);
-    input = prompt("Введите чего");
+while(isNaN(number1) == true){ 
+    if (isNaN(number1) == true) {
+        number1 = prompt("Введите число ", 10);
+    };
 };
-console.log(arr);
 
-const body = document.querySelector('body');
+while(isNaN(number2) == true || number2 > number1 ){ 
+    if (isNaN(number2) == true ) {
+        number2 = prompt("Введите число ", 5);
+    };
+    if(number2 > number1){
+        number2 = Number(prompt(`Введите число меньше ${number1}`, ));
+    }
+};
 
-const ol = document.createElement("ol");
-ol.innerHTML = '';
-body.append(ol);
+let printNumbers = function (){
+   number1 -= 1;
+   if(number1 <= number2){
+       alert(`${number1} --- ваше время вышло`);
+   }
+};
 
+ let timeId = setInterval(() => {
+    printNumbers()
+    alert(number1)
+ }, sec );
 
-const li = document.createElement("li");
-arr.forEach(element => {
-    const li = document.createElement("li");
-    li.innerHTML = element;
-    ol.append(li);  
-});
+ setTimeout(() => {
+    clearInterval(timeId)
+ },times);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
