@@ -3,45 +3,40 @@
 let from = document.getElementById("from");
 let to = document.getElementById("to");
 let interval = 0;
+let clicks = 0;
 
-const conteiner = document.querySelector(".conteiner");
-
-
-conteiner.insertAdjacentHTML("beforeend", '<button id="start">ПУск</button>');
-const startButton = document.getElementById("start");
+const button = document.querySelector("button");
 
 let second = document.querySelector(".second");
 
-conteiner.insertAdjacentHTML("beforeend", '<button id="stop">Пауза</button>');
-const stopButton = document.getElementById("stop");
+button.onclick = start;
 
-
-
-
-
-startButton.addEventListener('click', () =>{
-    if(isNaN(from.value) == true){
+button.addEventListener('click', () =>{
+    if(isNaN(from.value)){
         alert('введите начальное число');
     }; 
-    if(isNaN(to.value) == true){
+    if(isNaN(to.value)){
         alert('введите конечное число')
     };
     if(from.value < to.value){
-        alert("");
+        alert("конечное число должно быть меньше начального");
     } ;
-    if(isNaN(from.value) != true && isNaN(to.value) != true && from.value > to.value){
+    
+});
+
+  function start() {
+    clicks++
+    console.log(clicks);
+    if(clicks % 2 === 0){
+        button.innerText =" Пуск";
+        clearInterval(interval);
+    }
+    if(clicks % 2 !== 0){
+        button.innerText =" Стоп";
         interval = setInterval(timer, 1000);
-        
-    };
- 
-});
 
-
-stopButton.addEventListener('click', () =>{
-    clearInterval(interval);
-
-});
-
+    }
+};
 
 function timer(){
    from.value--;
@@ -51,3 +46,6 @@ function timer(){
         second.innerText = "все";
     }
 };
+
+
+
